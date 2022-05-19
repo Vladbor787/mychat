@@ -24,7 +24,6 @@ class ChatServiceTest {
     @Test
     fun deleteChat_shouldDeleteChat() {
         ChatService.addChat(user1)
-
         ChatService.deleteChat(user1)
 
         assertTrue(ChatService.chats.isEmpty())
@@ -33,7 +32,6 @@ class ChatServiceTest {
     @Test(expected = ChatNotFoundException::class)
     fun deleteChat_shouldThrow() {
         ChatService.addChat(user1)
-
         ChatService.deleteChat(user2)
     }
 
