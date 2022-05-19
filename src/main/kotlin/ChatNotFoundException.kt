@@ -1,2 +1,1 @@
-class ChatNotFoundException {
-}
+class ChatNotFoundException (message: String): RuntimeException(message)
